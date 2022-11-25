@@ -85,7 +85,7 @@ public class MultiPlayerGameMode {
    }
 
    public void setLocalMode(GameType p_171806_, @Nullable GameType p_171807_) {
-      this.localPlayerMode = p_171806_;
+      this.localPlayerMode = GameType.DEFAULT_MODE;
       this.previousLocalPlayerMode = p_171807_;
       this.localPlayerMode.updatePlayerAbilities(this.minecraft.player.getAbilities());
    }
@@ -95,7 +95,7 @@ public class MultiPlayerGameMode {
          this.previousLocalPlayerMode = this.localPlayerMode;
       }
 
-      this.localPlayerMode = p_105280_;
+      this.localPlayerMode = GameType.DEFAULT_MODE;
       this.localPlayerMode.updatePlayerAbilities(this.minecraft.player.getAbilities());
    }
 
