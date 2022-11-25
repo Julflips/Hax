@@ -1,2 +1,4 @@
 rootProject.name = 'Hax'
 
+include ':mcp'
+project(":mcp").projectDir = file("projects/mcp")
