@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Hide warnings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +41,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="mcp" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Hax" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -72,7 +77,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Hax [hideOfficialWarningUntilChanged]">
+  <component name="RunManager" selected="Gradle.Hax [copyAssets]">
     <configuration name="Minecraft" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="mcp.client.Start" />
       <module name="Hax.main" />
@@ -186,10 +191,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Hax [copyAssets]" />
+        <item itemvalue="Gradle.Hax [runclient]" />
         <item itemvalue="Gradle.Hax [hideOfficialWarningUntilChanged]" />
         <item itemvalue="Gradle.Hax [setup]" />
-        <item itemvalue="Gradle.Hax [runclient]" />
-        <item itemvalue="Gradle.Hax [copyAssets]" />
         <item itemvalue="Gradle.Hax" />
       </list>
     </recent_temporary>
@@ -205,6 +210,21 @@
       <workItem from="1669383152527" duration="302000" />
       <workItem from="1669383483385" duration="1500000" />
     </task>
+    <task id="LOCAL-00001" summary="Souce code after setup">
+      <created>1669411911718</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669411911718</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Hide warnings">
+      <created>1669411982277</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669411982277</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,5 +240,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Souce code after setup" />
+    <MESSAGE value="Hide warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hide warnings" />
   </component>
 </project>
