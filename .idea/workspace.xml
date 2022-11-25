@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +65,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Hax [runclient]">
+  <component name="RunManager" selected="Gradle.Hax [setup]">
     <configuration name="Minecraft" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="mcp.client.Start" />
       <module name="Hax.main" />
@@ -184,10 +186,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Hax [setup]" />
         <item itemvalue="Gradle.Hax [runclient]" />
         <item itemvalue="Gradle.Hax [hideOfficialWarningUntilChanged]" />
         <item itemvalue="Gradle.Hax [copyAssets]" />
-        <item itemvalue="Gradle.Hax [setup]" />
         <item itemvalue="Gradle.Hax" />
       </list>
     </recent_temporary>
