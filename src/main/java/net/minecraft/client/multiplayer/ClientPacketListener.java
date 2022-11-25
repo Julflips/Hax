@@ -1362,7 +1362,7 @@ public class ClientPacketListener implements ClientGamePacketListener {
    }
 
    public void handleInitializeBorder(ClientboundInitializeBorderPacket p_171767_) {
-      PacketUtils.ensureRunningOnSameThread(p_171767_, this, this.minecraft);
+      /*PacketUtils.ensureRunningOnSameThread(p_171767_, this, this.minecraft);
       WorldBorder worldborder = this.level.getWorldBorder();
       worldborder.setCenter(p_171767_.getNewCenterX(), p_171767_.getNewCenterZ());
       long i = p_171767_.getLerpTime();
@@ -1374,7 +1374,7 @@ public class ClientPacketListener implements ClientGamePacketListener {
 
       worldborder.setAbsoluteMaxSize(p_171767_.getNewAbsoluteMaxSize());
       worldborder.setWarningBlocks(p_171767_.getWarningBlocks());
-      worldborder.setWarningTime(p_171767_.getWarningTime());
+      worldborder.setWarningTime(p_171767_.getWarningTime());*/
    }
 
    public void handleSetBorderCenter(ClientboundSetBorderCenterPacket p_171781_) {

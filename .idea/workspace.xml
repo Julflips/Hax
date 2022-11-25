@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Hide warnings">
+    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Copied assets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientPacketListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +37,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Hax" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Hax" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -77,7 +86,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.Hax [copyAssets]">
+  <component name="RunManager" selected="Gradle.Hax [build]">
     <configuration name="Minecraft" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="mcp.client.Start" />
       <module name="Hax.main" />
@@ -85,6 +94,27 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Hax [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="Hax [copyAssets]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -170,32 +200,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Hax" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Hax [build]" />
         <item itemvalue="Gradle.Hax [copyAssets]" />
         <item itemvalue="Gradle.Hax [runclient]" />
         <item itemvalue="Gradle.Hax [hideOfficialWarningUntilChanged]" />
         <item itemvalue="Gradle.Hax [setup]" />
-        <item itemvalue="Gradle.Hax" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669411982277</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Copied assets">
+      <created>1669412365586</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669412365586</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +262,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Souce code after setup" />
     <MESSAGE value="Hide warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hide warnings" />
+    <MESSAGE value="Copied assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Copied assets" />
   </component>
 </project>
