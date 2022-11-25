@@ -1118,7 +1118,7 @@ public class ClientPacketListener implements ClientGamePacketListener {
                this.minecraft.player.connection.send(new ServerboundClientCommandPacket(ServerboundClientCommandPacket.Action.PERFORM_RESPAWN));
             }));
          }
-      } else if (clientboundgameeventpacket$type == ClientboundGameEventPacket.DEMO_EVENT) {
+      } else if (false) {
          Options options = this.minecraft.options;
          if (f == 0.0F) {
             this.minecraft.setScreen(new DemoIntroScreen());

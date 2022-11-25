@@ -7,7 +7,6 @@ build/
 #Run files
 runclient
 
-assets/
 # Ignore Gradle GUI config
 gradle-app.setting
 

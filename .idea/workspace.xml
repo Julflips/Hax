@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Copied assets">
+    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Ignore world border and move like a bot">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/server/level/ServerPlayerGameMode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669412365586</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Ignore world border and move like a bot">
+      <created>1669413542601</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669413542601</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +269,7 @@
     <MESSAGE value="Souce code after setup" />
     <MESSAGE value="Hide warnings" />
     <MESSAGE value="Copied assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Copied assets" />
+    <MESSAGE value="Ignore world border and move like a bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignore world border and move like a bot" />
   </component>
 </project>
