@@ -1114,13 +1114,11 @@ public class ClientPacketListener implements ClientGamePacketListener {
             this.minecraft.player.connection.send(new ServerboundClientCommandPacket(ServerboundClientCommandPacket.Action.PERFORM_RESPAWN));
             this.minecraft.setScreen(new ReceivingLevelScreen());
          } else if (i == 1) {
-            this.minecraft.setScreen(new WinScreen(true, () -> {
-               this.minecraft.player.connection.send(new ServerboundClientCommandPacket(ServerboundClientCommandPacket.Action.PERFORM_RESPAWN));
-            }));
+            //this.minecraft.setScreen(new WinScreen(true, () -> {this.minecraft.player.connection.send(new ServerboundClientCommandPacket(ServerboundClientCommandPacket.Action.PERFORM_RESPAWN));}));
          }
       } else if (false) {
          Options options = this.minecraft.options;
-         if (f == 0.0F) {
+         if (false) {
             this.minecraft.setScreen(new DemoIntroScreen());
          } else if (f == 101.0F) {
             this.minecraft.gui.getChat().addMessage(Component.translatable("demo.help.movement", options.keyUp.getTranslatedKeyMessage(), options.keyLeft.getTranslatedKeyMessage(), options.keyDown.getTranslatedKeyMessage(), options.keyRight.getTranslatedKeyMessage()));
