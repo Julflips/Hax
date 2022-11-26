@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Boat Bot movement">
+    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Cat scanner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientLevel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMoveVehiclePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMoveVehiclePacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/ai/goal/LookAtPlayerGoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/ai/goal/LookAtPlayerGoal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +271,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669419907629</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="No z rounding">
+      <created>1669469566512</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669469566512</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Cat scanner">
+      <created>1669469591636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669469591636</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +310,8 @@
     <MESSAGE value="No Win-Screen" />
     <MESSAGE value="Force Survival" />
     <MESSAGE value="Boat Bot movement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Boat Bot movement" />
+    <MESSAGE value="No z rounding" />
+    <MESSAGE value="Cat scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cat scanner" />
   </component>
 </project>

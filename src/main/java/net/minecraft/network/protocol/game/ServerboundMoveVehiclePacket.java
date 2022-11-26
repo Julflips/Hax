@@ -13,8 +13,8 @@ public class ServerboundMoveVehiclePacket implements Packet<ServerGamePacketList
 
    public ServerboundMoveVehiclePacket(Entity p_134192_) {
       this.x = Math.round(p_134192_.getX() * 100.0) / 100.0;
-      this.y = Math.round(p_134192_.getY() * 100.0) / 100.0;
-      this.z = p_134192_.getZ();
+      this.y = p_134192_.getY();
+      this.z = Math.round(p_134192_.getZ() * 100.0) / 100.0;
       this.yRot = p_134192_.getYRot();
       this.xRot = p_134192_.getXRot();
    }

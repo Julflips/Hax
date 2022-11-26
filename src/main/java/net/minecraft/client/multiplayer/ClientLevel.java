@@ -207,13 +207,13 @@ public class ClientLevel extends Level {
    public void tick(BooleanSupplier p_104727_) {
       time -= 1;
       if(time <= 0){
-         System.out.println("Time's up");
+         //System.out.println("Time's up");
          Iterable<Entity> l = this.getEntities().getAll();
          for(Entity entity : l) {
             if(entity.getClass().getName().endsWith("Cat")){
                Cat mycat = (Cat) entity;
-               System.out.println("Cat owned by: " + mycat.getOwnerUUID());
-               System.out.println("Cat rotated: " + entity.getXRot() + ", " + entity.getYRot());
+               System.out.println("Cat found! Owned by: " + mycat.getOwnerUUID());
+               System.out.println("Position: " + entity.getX() + ", " + entity.getY() + " | Rotated: " + entity.getXRot() + ", " + entity.getYRot());
             }
          }
          time = 100;
