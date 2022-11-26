@@ -1278,6 +1278,7 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource {
    }
 
    public void playerTouch(Player p_20081_) {
+      //System.out.println("You touched: " + this.getName());
    }
 
    public void push(Entity p_20293_) {

@@ -6,10 +6,8 @@ import com.google.common.collect.Maps;
 import com.google.common.collect.Queues;
 import com.mojang.logging.LogUtils;
 import it.unimi.dsi.fastutil.objects.Object2ObjectArrayMap;
-import java.util.Deque;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+
+import java.util.*;
 import java.util.function.BooleanSupplier;
 import java.util.function.Supplier;
 import javax.annotation.Nullable;
@@ -50,6 +48,7 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.animal.Cat;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -105,6 +104,8 @@ public class ClientLevel extends Level {
    private final Map<String, MapItemSavedData> mapData = Maps.newHashMap();
    private static final long CLOUD_COLOR = 16777215L;
    private int skyFlashTime;
+
+   private int time = 1000;
    private final Object2ObjectArrayMap<ColorResolver, BlockTintCache> tintCaches = Util.make(new Object2ObjectArrayMap<>(3), (p_194170_) -> {
       p_194170_.put(BiomeColors.GRASS_COLOR_RESOLVER, new BlockTintCache((p_194181_) -> {
          return this.calculateBlockTint(p_194181_, BiomeColors.GRASS_COLOR_RESOLVER);
@@ -204,6 +205,19 @@ public class ClientLevel extends Level {
    }
 
    public void tick(BooleanSupplier p_104727_) {
+      time -= 1;
+      if(time <= 0){
+         System.out.println("Time's up");
+         Iterable<Entity> l = this.getEntities().getAll();
+         for(Entity entity : l) {
+            if(entity.getClass().getName().endsWith("Cat")){
+               Cat mycat = (Cat) entity;
+               System.out.println("Cat owned by: " + mycat.getOwnerUUID());
+               System.out.println("Cat rotated: " + entity.getXRot() + ", " + entity.getYRot());
+            }
+         }
+         time = 100;
+      }
       this.getWorldBorder().tick();
       this.tickTime();
       this.getProfiler().push("blocks");

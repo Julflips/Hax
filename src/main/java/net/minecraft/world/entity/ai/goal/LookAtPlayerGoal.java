@@ -78,6 +78,8 @@ public class LookAtPlayerGoal extends Goal {
 
    public void start() {
       this.lookTime = this.adjustedTickDelay(40 + this.mob.getRandom().nextInt(40));
+      //System.out.println(mob.getClass());
+      //System.out.println("Rotation: " + mob.getXRot() + ", " + mob.getYRot());
    }
 
    public void stop() {
