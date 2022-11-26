@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Ignore world border and move like a bot">
+    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Boat Bot movement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientPacketListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientPacketListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/MultiPlayerGameMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/MultiPlayerGameMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientLevel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/client/multiplayer/ClientLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMoveVehiclePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMoveVehiclePacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/ai/goal/LookAtPlayerGoal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/ai/goal/LookAtPlayerGoal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +82,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/julfl/IdeaProjects/Meteor&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -203,8 +206,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Hax [build]" />
-        <item itemvalue="Gradle.Hax [copyAssets]" />
         <item itemvalue="Gradle.Hax [runclient]" />
+        <item itemvalue="Gradle.Hax [copyAssets]" />
         <item itemvalue="Gradle.Hax [hideOfficialWarningUntilChanged]" />
         <item itemvalue="Gradle.Hax [setup]" />
       </list>
@@ -249,7 +252,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669413542601</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="No Win-Screen">
+      <created>1669419878670</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669419878670</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Force Survival">
+      <created>1669419893991</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669419893991</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Boat Bot movement">
+      <created>1669419907629</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669419907629</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +295,9 @@
     <MESSAGE value="Hide warnings" />
     <MESSAGE value="Copied assets" />
     <MESSAGE value="Ignore world border and move like a bot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignore world border and move like a bot" />
+    <MESSAGE value="No Win-Screen" />
+    <MESSAGE value="Force Survival" />
+    <MESSAGE value="Boat Bot movement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Boat Bot movement" />
   </component>
 </project>

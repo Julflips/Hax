@@ -16,7 +16,7 @@ public abstract class ServerboundMovePlayerPacket implements Packet<ServerGamePa
    protected ServerboundMovePlayerPacket(double p_179675_, double p_179676_, double p_179677_, float p_179678_, float p_179679_, boolean p_179680_, boolean p_179681_, boolean p_179682_) {
       this.x = Math.round(p_179675_ * 100.0) / 100.0;
       this.y = Math.round(p_179676_ * 100.0) / 100.0;
-      this.z = Math.round(p_179677_ * 100.0) / 100.0;
+      this.z = p_179677_;
       this.yRot = p_179678_;
       this.xRot = p_179679_;
       this.onGround = p_179680_;
