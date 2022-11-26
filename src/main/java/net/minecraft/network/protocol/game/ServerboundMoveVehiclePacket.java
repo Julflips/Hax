@@ -4,6 +4,9 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.world.entity.Entity;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class ServerboundMoveVehiclePacket implements Packet<ServerGamePacketListener> {
    private final double x;
    private final double y;
@@ -12,13 +15,20 @@ public class ServerboundMoveVehiclePacket implements Packet<ServerGamePacketList
    private final float xRot;
 
    public ServerboundMoveVehiclePacket(Entity p_134192_) {
-      this.x = Math.round(p_134192_.getX() * 100.0) / 100.0;
+      this.x = round(p_134192_.getX(), 2);
       this.y = p_134192_.getY();
-      this.z = Math.round(p_134192_.getZ() * 100.0) / 100.0;
+      this.z = round(p_134192_.getZ(), 2);
       this.yRot = p_134192_.getYRot();
       this.xRot = p_134192_.getXRot();
+      System.out.println("MoveVehicle: "+ x + ", " + z);
    }
+   public static double round(double value, int places) {
+      if (places < 0) throw new IllegalArgumentException();
 
+      BigDecimal bd = BigDecimal.valueOf(value);
+      bd = bd.setScale(places, RoundingMode.HALF_UP);
+      return bd.doubleValue();
+   }
    public ServerboundMoveVehiclePacket(FriendlyByteBuf p_179700_) {
       this.x = p_179700_.readDouble();
       this.y = p_179700_.readDouble();

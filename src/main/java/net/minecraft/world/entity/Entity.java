@@ -7,6 +7,9 @@ import com.google.common.collect.Sets;
 import com.mojang.logging.LogUtils;
 import it.unimi.dsi.fastutil.objects.Object2DoubleArrayMap;
 import it.unimi.dsi.fastutil.objects.Object2DoubleMap;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
@@ -26,6 +29,7 @@ import net.minecraft.CrashReportCategory;
 import net.minecraft.ReportedException;
 import net.minecraft.Util;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
@@ -2955,7 +2959,20 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource {
       return this.getZ((2.0D * this.random.nextDouble() - 1.0D) * p_20263_);
    }
 
+   public static double round(double value, int places) {
+      if (places < 0) throw new IllegalArgumentException();
+
+      BigDecimal bd = BigDecimal.valueOf(value);
+      bd = bd.setScale(places, RoundingMode.HALF_UP);
+      return bd.doubleValue();
+   }
+
    public final void setPosRaw(double p_20344_, double p_20345_, double p_20346_) {
+      if(this instanceof AbstractClientPlayer){
+         p_20344_ = round(p_20344_, 2);
+         p_20346_ = round(p_20346_, 2);
+         System.out.println("Rounded raw pos: " + p_20344_ +", " + p_20346_);
+      }
       if (this.position.x != p_20344_ || this.position.y != p_20345_ || this.position.z != p_20346_) {
          this.position = new Vec3(p_20344_, p_20345_, p_20346_);
          int i = Mth.floor(p_20344_);

@@ -3,6 +3,9 @@ package net.minecraft.network.protocol.game;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.Packet;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public abstract class ServerboundMovePlayerPacket implements Packet<ServerGamePacketListener> {
    protected final double x;
    protected final double y;
@@ -14,14 +17,22 @@ public abstract class ServerboundMovePlayerPacket implements Packet<ServerGamePa
    protected final boolean hasRot;
 
    protected ServerboundMovePlayerPacket(double p_179675_, double p_179676_, double p_179677_, float p_179678_, float p_179679_, boolean p_179680_, boolean p_179681_, boolean p_179682_) {
-      this.x = Math.round(p_179675_ * 100.0) / 100.0;
+      this.x = round(p_179675_,2);
       this.y = p_179676_;
-      this.z = Math.round(p_179677_ * 100.0) / 100.0;
+      this.z = round(p_179677_,2);
+      System.out.println("MovePlayer: "+ x + ", " + z);
       this.yRot = p_179678_;
       this.xRot = p_179679_;
       this.onGround = p_179680_;
       this.hasPos = p_179681_;
       this.hasRot = p_179682_;
+   }
+   public static double round(double value, int places) {
+      if (places < 0) throw new IllegalArgumentException();
+
+      BigDecimal bd = BigDecimal.valueOf(value);
+      bd = bd.setScale(places, RoundingMode.HALF_UP);
+      return bd.doubleValue();
    }
 
    public void handle(ServerGamePacketListener p_134138_) {

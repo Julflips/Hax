@@ -181,6 +181,7 @@ public class Connection extends SimpleChannelInboundHandler<Packet<?>> {
    }
 
    private void sendPacket(Packet<?> p_129521_, @Nullable PacketSendListener p_243246_) {
+      //System.out.println(p_129521_.getClass().getName());
       ConnectionProtocol connectionprotocol = ConnectionProtocol.getProtocolForPacket(p_129521_);
       ConnectionProtocol connectionprotocol1 = this.getCurrentProtocol();
       ++this.sentPackets;
