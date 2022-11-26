@@ -2968,11 +2968,11 @@ public abstract class Entity implements Nameable, EntityAccess, CommandSource {
    }
 
    public final void setPosRaw(double p_20344_, double p_20345_, double p_20346_) {
-      if(this instanceof AbstractClientPlayer){
+      /*if(this instanceof AbstractClientPlayer){
          p_20344_ = round(p_20344_, 2);
          p_20346_ = round(p_20346_, 2);
          System.out.println("Rounded raw pos: " + p_20344_ +", " + p_20346_);
-      }
+      }*/
       if (this.position.x != p_20344_ || this.position.y != p_20345_ || this.position.z != p_20346_) {
          this.position = new Vec3(p_20344_, p_20345_, p_20346_);
          int i = Mth.floor(p_20344_);

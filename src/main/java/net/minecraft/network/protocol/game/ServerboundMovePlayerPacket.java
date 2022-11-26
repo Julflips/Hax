@@ -17,9 +17,9 @@ public abstract class ServerboundMovePlayerPacket implements Packet<ServerGamePa
    protected final boolean hasRot;
 
    protected ServerboundMovePlayerPacket(double p_179675_, double p_179676_, double p_179677_, float p_179678_, float p_179679_, boolean p_179680_, boolean p_179681_, boolean p_179682_) {
-      this.x = round(p_179675_,2);
-      this.y = p_179676_;
-      this.z = round(p_179677_,2);
+      this.x = round(p_179675_,1);
+      this.y = round(p_179676_, 1);
+      this.z = round(p_179677_,1);
       System.out.println("MovePlayer: "+ x + ", " + z);
       this.yRot = p_179678_;
       this.xRot = p_179679_;

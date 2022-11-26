@@ -15,13 +15,14 @@ public class ServerboundMoveVehiclePacket implements Packet<ServerGamePacketList
    private final float xRot;
 
    public ServerboundMoveVehiclePacket(Entity p_134192_) {
-      this.x = round(p_134192_.getX(), 2);
-      this.y = p_134192_.getY();
-      this.z = round(p_134192_.getZ(), 2);
+      this.x = round(p_134192_.getX(), 1);
+      this.y = round(p_134192_.getY(), 1);
+      this.z = round(p_134192_.getZ(), 1);
       this.yRot = p_134192_.getYRot();
       this.xRot = p_134192_.getXRot();
       System.out.println("MoveVehicle: "+ x + ", " + z);
    }
+
    public static double round(double value, int places) {
       if (places < 0) throw new IllegalArgumentException();
 

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Cat scanner less noisy and rounded x/z instead of x/y">
+    <list default="true" id="7115d642-6643-448f-a21f-29f1205cc7b3" name="Changes" comment="Raw Coordinate rounding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMovePlayerPacket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMoveVehiclePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/network/protocol/game/ServerboundMoveVehiclePacket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/minecraft/world/entity/Entity.java" afterDir="false" />
@@ -293,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669470762499</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Raw Coordinate rounding">
+      <created>1669475067715</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669475067715</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +327,7 @@
     <MESSAGE value="No z rounding" />
     <MESSAGE value="Cat scanner" />
     <MESSAGE value="Cat scanner less noisy and rounded x/z instead of x/y" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cat scanner less noisy and rounded x/z instead of x/y" />
+    <MESSAGE value="Raw Coordinate rounding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Raw Coordinate rounding" />
   </component>
 </project>
